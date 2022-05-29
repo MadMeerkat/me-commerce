@@ -11,9 +11,6 @@
     --alternative-brand-color:#0f4c75;
     --light-brand-color: #BBE1FA;
 
-
-    /*TIPO DE FUENTE*/
-
     /*FONT SIZE*/
     --font-size-0:0.75rem; /* 11px */
     --font-size-1:1rem; /* 14px */
@@ -86,7 +83,6 @@
     transform: scale(1);
 }
 
-
 .nav-link-light{
     color: var(--white-font);
     text-decoration: none;
@@ -120,7 +116,7 @@
     box-shadow: 0 0 0 0.0rem;
 }
 
-
+/* RESPONSIVE MOBILE */
 @media (max-width: 990px) {
     .nav-link:hover:after{
         transform: scale(0);

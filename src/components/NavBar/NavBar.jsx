@@ -59,18 +59,16 @@ const MaterialUISwitch = styled(Switch)(({ theme, }) => ({
 
 const NavBar = () => {
 
-    const [mode, setMode] = useState({
+    const [mode, setMode ] = useState({
         darkMode: true
     });
 
     const { darkMode } = mode;
 
-    const handleDarkMode = (e) => {
-
+    const handleDarkMode = ( e ) => {
         setMode({
             darkMode: !darkMode
         });
-
     }
 
 
