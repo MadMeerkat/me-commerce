@@ -8,6 +8,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
+import CartWidget from '../CartWidget';
 
 //ES PARTE DEL SWITCH
 const MaterialUISwitch = styled(Switch)(({ theme, }) => ({
@@ -74,10 +75,10 @@ const NavBar = () => {
 
     return (
         <>
-            <Navbar className={darkMode ? 'navbar-theme' : 'navbar-theme-light'} variant={darkMode ? 'navbar-theme' : 'light navbar-theme-light'} expand="lg" fixed='top'>
+            <Navbar className={darkMode ? 'navbar-theme' : 'navbar-theme-light'} variant={darkMode ? 'navbar-theme' : 'light navbar-theme-light'} expand="lg" sticky>
                 <Container>
-                    <Navbar.Brand href="#home" className={darkMode ? 'navbar-brand' : 'navbar-brand-light'}>Me-commerce</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav"  variant={darkMode ? 'navbar-toggler-icon navbar-toggler-dark' : 'navbar-toggler-icon'}/>
+                    <Navbar.Brand href="#home" className={darkMode ? 'navbar-brand' : 'navbar-brand-light'} variant={darkMode ? 'navbar-brand' : 'navbar-brand-light'}>Me-commerce</Navbar.Brand>
+                    <Navbar.Toggle  variant={darkMode ? 'custom-toggler navbar-toggler-icon' : 'custom-toggler-light navbar-toggler-icon'}/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="#home" className={darkMode ? 'nav-link' : 'nav-link-light'}>Opcion1</Nav.Link>
@@ -85,6 +86,7 @@ const NavBar = () => {
                             <Nav.Link href="#op3" className={darkMode ? 'nav-link' : 'nav-link-light'}>Opcion3</Nav.Link>
                             <Nav.Link href="#op4" className={darkMode ? 'nav-link' : 'nav-link-light'}>Opcion4</Nav.Link>
                         </Nav>
+                        <CartWidget color={darkMode ? '#FFF' : '#1b262c'} size={24} ClassNames={darkMode ? 'cart-icon' : 'cart-icon-light'} />
                         <FormGroup>
                             <FormControlLabel
                                 control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked onChange={handleDarkMode} />}

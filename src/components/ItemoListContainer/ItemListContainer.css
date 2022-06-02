@@ -1,0 +1,29 @@
+:root{
+    font-size: 14px;
+
+    /* COLORES GENERALES */
+    --white-font:#fff;
+    --black-font:#000;
+
+    /* COLORES BRANDING*/
+    --primary-brand-color:#1b262c;
+    --secondary-brand-color:#3282b8;
+    --alternative-brand-color:#0f4c75;
+    --light-brand-color: #BBE1FA;
+
+    /*FONT SIZE*/
+    --font-size-0:0.75rem; /* 11px */
+    --font-size-1:1rem; /* 14px */
+    --font-size-2:1.2rem; /* 17px */
+    --font-size-3:2rem; /* 28px */
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.gretting{
+    margin-top: 1.5rem;
+}
