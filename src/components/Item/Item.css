@@ -1,0 +1,39 @@
+:root {
+    /* COLORES GENERALES */
+    --white-font: #fff;
+    --black-font: #000;
+
+    /* COLORES BRANDING*/
+    --primary-brand-color: rgb(27, 38, 44);
+    --secondary-brand-color: #3282b8;
+    --alternative-brand-color: #0f4c75;
+    --light-brand-color: rgb(187, 225, 250);
+    --background-color:#c9c9c9;
+
+    /*FONT SIZE*/
+    --font-size-0: 0.75rem;
+    /* 11px */
+    --font-size-1: 1rem;
+    /* 14px */
+    --font-size-2: 1.2rem;
+    /* 17px */
+    --font-size-3: 2rem;
+    /* 28px */
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.item-container{
+    padding: 16px;
+    border: 1px solid var(--alternative-brand-color);
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
